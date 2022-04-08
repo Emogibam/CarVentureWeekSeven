@@ -1,0 +1,157 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #f6f5f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    margin: -20px 0 50px;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    position:relative;
+    margin-top:15px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+}
+
+span {
+    font-size: 12px;
+}
+
+a {
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+.cont .btn {
+    border-radius: 10px;
+    background-color: #1F4590;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    width:40%;
+    text-transform: uppercase;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.cont .ghost {
+    background-color: #FFFFFF;
+    color: #1F4590;
+    font-size: 14px;
+    font-weight: bold;
+    width: 40%;
+    height:35px;
+    border-radius:5px;
+    text-transform:uppercase;
+}
+
+form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.cont {
+    width: 98%;
+    height: 80%;
+    position: absolute;
+    display: flex;
+    justify-content:center; 
+    border-radius:5px;
+    margin-top: 2%;
+    margin-left:0;
+}
+.lay {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 20px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    min-height: 480px;
+}
+
+.form-container {
+    position: relative;
+    top: 0;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.sign-in-container {
+    left: 0;
+    width: 40%;
+}
+
+.container.right-panel-active .sign-in-container {
+    transform: translateX(100%);
+}
+
+.sign-up-container {
+    left: 0;
+    width: 40%;
+}
+
+.container.right-panel-active .sign-up-container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+.overlay-container {
+    background: #1F4590;
+    position: relative;
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.overlay-panel {
+    position: relative;
+    margin: auto;
+    color: #FFFFFF;
+    padding: 0 40px;
+    text-align: center;
+    margin-top: 25%;
+    width: 100%;
+}
+

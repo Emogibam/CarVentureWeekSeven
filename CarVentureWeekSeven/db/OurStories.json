@@ -1,0 +1,38 @@
+{
+  "Id": 1,
+  "ImagePath": "images/Lexus2.jpg",
+  "Title": "Quality Services",
+  "Story": "At CarVenture we pride ourselves in the quality of service and strive to always render excellent services to ensure customer satisfaction"
+},
+{
+  "Id": 2,
+  "ImagePath": "images/Blog_Image.png",
+  "Title": "Travel Safety Tips",
+  "Story": "Our safety guideline manuals, audio-track and, app ensures the safety of our customers in preserving life eliminating injuries and maintaining environmental balance."
+},
+{
+  "Id": 3,
+  "ImagePath": "images/Blog_Image_volve.png",
+  "Title": "CarVenture the best car rental service in Africa",
+  "Story": "CarVenture has been recognised as the best car rental service in Africa for the 3rd time in a row, and this recognition at the continental level has shown the companys dedication to quality service."
+
+},
+{
+  "Id": 4,
+  "ImagePath": "images/Blog_Image_honde.png",
+  "Title": "Reason I prefer CarVenture",
+  "Story": "As a satisfied customer anytime I patronize CarVenture, I am always treated like royalty and i get a glimpse at the luxury available to the top 1% of wealthy people in Africa."
+},
+{
+  "Id": 5,
+  "ImagePath": "images/Lexus5.jpg",
+  "Title": "Rent-A-Driver",
+  "Story": "The rent a driver is our new platform integrated with car rentals to give you the comfort you desire at afraction of the cost."
+
+},
+{
+  "Id": 6,
+  "ImagePath": "images/Lexus4.jpg",
+  "Title": "The Peak of Comfort",
+  "Story": "Our luxury range of cars gives you the ultimate sensation as you ride like a King."
+}

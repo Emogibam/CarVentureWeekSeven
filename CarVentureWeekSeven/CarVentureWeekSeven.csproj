@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	  <RunWorkingDirectory>$(MSBuildProjectDirectory)</RunWorkingDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="db\Cars.json" />
+    <Content Remove="db\Location.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarVentureCore\CarVentureCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="db\Cars.json" />
+    <None Include="db\Location.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>

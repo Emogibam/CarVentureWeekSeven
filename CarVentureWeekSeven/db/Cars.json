@@ -1,0 +1,128 @@
+﻿{
+  "Id": 1,
+  "Brand": "Ford",
+  "Name": "Flex",
+  "ImagePath": "images/CarRed.png",
+  "Aircondition": "Air Condition",
+  "Bluetooth": "Bluetooth Sound System",
+  "Sunroof": "Sunroof Available"
+},
+{
+  "Id": 2,
+  "Brand": "Mazda",
+  "Name": "MX-5",
+  "ImagePath": "images/CarBlack.png",
+  "Aircondition": "Air Condition",
+  "Bluetooth": "Bluetooth Sound System",
+  "Sunroof": "Sunroof Not Available"
+},
+{
+  "Id": 3,
+  "Brand": "Volkswagen",
+  "Name": "rio",
+  "ImagePath": "images/CarWhite.png",
+  "Aircondition": "Air Condition",
+  "Bluetooth": "Bluetooth Sound System",
+  "Sunroof": "Sunroof Available"
+},
+{
+  "Id": 4,
+  "Brand": "Dodge",
+  "Name": "Viper",
+  "ImagePath": "images/AudiA53.jpg",
+  "Aircondition": "No Air Condition",
+  "Bluetooth": "Bluetooth Sound System",
+  "Sunroof": "Sunroof Not Available"
+},
+
+{
+  "Id": 6,
+  "Brand": "Infiniti",
+  "Name": "JX",
+  "ImagePath": "images/Bmw2.jpg",
+  "Aircondition": "Air Condition",
+  "Bluetooth": "No Bluetooth Sound System",
+  "Sunroof": "Sunroof Available"
+},
+{
+  "Id": 7,
+  "Brand": "Dodge",
+  "Name": "Dynasty",
+  "ImagePath": "images/Bugatti.jpg",
+  "Aircondition": "Air Condition",
+  "Bluetooth": "No Bluetooth Sound System",
+  "Sunroof": "Sunroof Not Available"
+},
+{
+  "Id": 8,
+  "Brand": "Oldsmobile",
+  "Name": "88",
+  "ImagePath": "images/Bmw3.jpg",
+  "Aircondition": "No Air Condition",
+  "Bluetooth": "No Bluetooth Sound System",
+  "Sunroof": "Sunroof Not Available"
+},
+{
+  "Id": 9,
+  "Brand": "Toyota",
+  "Name": "Paseo",
+  "ImagePath": "images/Bugatti2.jpg",
+  "Aircondition": "Air Condition",
+  "Bluetooth": "No Bluetooth Sound System",
+  "Sunroof": "Sunroof Not Available"
+},
+{
+  "Id": 10,
+  "Brand": "Martin",
+  "Name": "Vantage",
+  "ImagePath": "images/Bugatti3.jpg",
+  "Aircondition": "Air Condition",
+  "Bluetooth": "No Bluetooth Sound System",
+  "Sunroof": "Sunroof Available"
+},
+{
+  "Id": 11,
+  "Brand": "Toyota",
+  "Name": "Camry Hybrid",
+  "ImagePath": "images/Ferarri.jpg",
+  "Aircondition": "Air Condition",
+  "Bluetooth": "No Bluetooth Sound System",
+  "Sunroof": "Sunroof Not Available"
+},
+{
+  "Id": 12,
+  "Brand": "Subaru",
+  "Name": "Outback",
+  "ImagePath": "images/Ferarri2.jpg",
+  "Aircondition": "No Air Condition",
+  "Bluetooth": "Bluetooth Sound System",
+  "Sunroof": "Sunroof Not Available"
+},
+{
+  "Id": 13,
+  "Brand": "Lotus",
+  "Name": "Exige",
+  "ImagePath": "images/Ferarri3.jpg",
+  "Aircondition": "No Air Condition",
+  "Bluetooth": "Bluetooth Sound System",
+  "Sunroof": "Sunroof Available"
+},
+{
+  "Id": 14,
+  "Brand": "Nissan",
+  "Name": "GT-R",
+  "ImagePath": "images/Ferarri4.jpg",
+  "Aircondition": "No Air Condition",
+  "Bluetooth": "Bluetooth Sound System",
+  "Sunroof": "Sunroof Available"
+},
+{
+  "Id": 15,
+  "Brand": "Toyota",
+  "Name": "4Runner",
+  "ImagePath": "images/Ferarri5.jpg",
+  "Aircondition": "Air Condition",
+  "Bluetooth": "No Bluetooth Sound System",
+  "Sunroof": "Sunroof not Available"
+}
+

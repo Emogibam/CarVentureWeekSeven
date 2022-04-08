@@ -1,0 +1,431 @@
+﻿@model IndexModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="wrapper">
+
+
+
+    <div class="section-a">
+
+
+
+
+        <section class="image-holder">
+
+            <p></p>
+            <div>
+
+                <h2 class="first-text">Renting cars have never been this easy</h2>
+                <P class="second-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</P>
+
+
+
+                <form class="search search-bar" method="post">
+                    <div class="pick ">
+                        <p>Pick Up Location</p>
+                        @Html.DropDownListFor(model=>model.Location,(SelectList)ViewBag.LocationDrop,"Select Location")
+                    </div>
+                    <div class="pick pickup_date">
+                        <p>Pick Up Date</p>
+                        <input type="date" asp-for="PickUpDate" class="select-item" name="PickUpDate" />
+                    </div>
+                    <div class="pick return_date">
+                        <p>Return Date</p>
+                        <input type="date" asp-for="ReturnDate" class="select-item" name="ReturnDate" />
+                    </div>
+                    <input class="search-btn" type="submit" value="Search for Cars" />
+                </form>
+
+
+
+
+            </div>
+
+        </section>
+
+
+
+        @*second-search*@
+
+
+
+        <form class="search second-search-bar" method="post">
+            <div class="pick ">
+                <p>Pick Up Location</p>
+                @Html.DropDownListFor(model=>model.Location,(SelectList)ViewBag.LocationDrop,"Select Location")
+            </div>
+            <div class="pick pickup_date">
+                <p>Pick Up Date</p>
+                <input type="date" asp-for="PickUpDate" class="select-item" name="PickUpDate" />
+            </div>
+            <div class="pick return_date">
+                <p>Return Date</p>
+                <input type="date" asp-for="ReturnDate" class="select-item" name="ReturnDate" />
+            </div>
+            <input class="search-btn" type="submit" value="Search for Cars" />
+        </form>
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <!-- <"Trusted-companies"> -->
+    <div class="trusted-companies">
+        <img src="~/images/Trusted_By_Section.png">
+    </div>
+
+
+
+    <div class="featured-cars">
+
+        <p>Our Featured Cars</p>
+
+
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+
+            <div class="button-holder">
+
+                <button class="carousel-control-prev  buttons" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">  </span>
+                </button>
+                <button class="carousel-control-next  buttons" id="next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">   </span>
+                </button>
+
+            </div>
+
+
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+
+                    <div class="row">
+
+
+                        @for (int x = 0; x < 3; x++)
+                        {
+                            <div class="cars  col-md-4">
+                                <div class="toyota">
+                                    <img src="@Model.Cars[x].ImagePath" alt="@Model.Cars[x].Name @Model.Cars[x].Brand">
+                                    <p>@Model.Cars[x].Name @Model.Cars[x].Brand</p>
+
+                                    <div class="check">
+                                        <div><i class="fa fa-check-circle"></i> <span>@Model.Cars[x].AirCondition</span></div>
+                                        <div><i class="fa fa-check-circle"></i> <span>@Model.Cars[x].Bluetooth</span></div>
+                                        <div><i class="fa fa-check-circle"></i> <span>@Model.Cars[x].Sunroof</span></div>
+
+                                    </div>
+
+
+
+                                    <div class="button">
+                                        <button id="RentNow">Rent Now</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+
+                    </div>
+
+                </div>
+
+                <div class="carousel-item ">
+
+
+                    <div class="row">
+
+
+                        @for (int x = 3; x < 6; x++)
+                        {
+                            <div class="cars  col-md-4">
+                                <div class="toyota">
+                                    <img src="@Model.Cars[x].ImagePath" alt="@Model.Cars[x].Name @Model.Cars[x].Brand">
+                                    <p>@Model.Cars[x].Name @Model.Cars[x].Brand</p>
+
+                                    <div class="check">
+                                        <div><img src="~/Images/checkbox.png"> <span>@Model.Cars[x].AirCondition</span></div>
+                                        <div><img src="~/Images/checkbox.png"> <span>@Model.Cars[x].Bluetooth</span></div>
+                                        <div><img src="~/Images/checkbox.png"> <span>@Model.Cars[x].Sunroof</span></div>
+
+                                    </div>
+
+
+
+                                    <div class="button">
+                                        <button id="RentNow">Rent Now</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="carousel-item ">
+
+
+                    <div class="row">
+
+
+                        @for (int x = 6; x < 9; x++)
+                        {
+                            <div class="cars  col-md-4">
+                                <div class="toyota">
+                                    <img src="@Model.Cars[x].ImagePath" alt="@Model.Cars[x].Name @Model.Cars[x].Brand">
+                                    <p>@Model.Cars[x].Name @Model.Cars[x].Brand</p>
+
+                                    <div class="check">
+                                        <div><img src="~/Images/checkbox.png"> <span>@Model.Cars[x].AirCondition</span></div>
+                                        <div><img src="~/Images/checkbox.png"> <span>@Model.Cars[x].Bluetooth</span></div>
+                                        <div><img src="~/Images/checkbox.png"> <span>@Model.Cars[x].Sunroof</span></div>
+
+                                    </div>
+
+
+
+                                    <div class="button">
+                                        <button id="RentNow">Rent Now</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        }
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    @*we are different*@
+    <section class="holder">
+        <h3>
+            Why We Are Different
+        </h3>
+        <p class="first-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="~/Images/Vector.png" alt="#">
+
+                <div class="inline-box">
+                    <h2>Easy Booking</h2>
+                    <p class="second-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="~/Images/Shield.png" alt="3">
+
+                <div class="inline-box">
+                    <h2> Secure Payments</h2>
+                    <p class="second-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <img src="~/images/Vector (1).png" alt="">
+
+                <div class="inline-box">
+                    <h2>24/7 Tracking</h2>
+                    <p class="second-paragraph">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                </div>
+            </div>
+        </div>
+
+        @*Close We are different*@
+    </section>
+
+
+
+
+    @*what people say*@
+    <section class="what_people_say">
+        <h2>What do people say about us?</h2>
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+
+        <div class="inner_container">
+            <div class="left  ">
+                <img src="~/images/Testimonial_Image.png" alt="Testimonials" class="center">
+            </div>
+
+            <div class="right  ">
+                <p>“Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.“</p>
+
+                <hr>
+
+                <p class="name">
+                    <span>Anna De’Suza,</span>
+
+                    <span>CEO at SpaceX</span>
+                </p>
+            </div>
+        </div>
+
+        @*Closing people say*@
+    </section>
+
+
+
+
+
+    @*our stories*@
+    <section class="stories">
+
+        <h2>Read Our Stories</h2>
+
+        <div class="sub-stories">
+
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="row">
+
+                            @for (int x = 0; x < 3; x++)
+                            {
+
+                                <div class="cars  col-md-4">
+
+                                    <div class="story">
+                                        <img src="@Model.ReadList[x].ImagePath" alt="car 1">
+                                        <div class="inner-text">
+                                            <button>Tags</button>
+                                            <h3>@Model.ReadList[x].Title</h3>
+                                            <p>@Model.ReadList[x].Story</p>
+                                            <a href="#">Find Out More &#8594;</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            }
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="carousel-item ">
+
+                        <div class="row">
+
+                            @for (int x = 3; x < 6; x++)
+                            {
+
+                                <div class="cars  col-md-4">
+
+
+                                    <div class="story">
+                                        <img src="@Model.ReadList[x].ImagePath" alt="car 1">
+                                        <div class="inner-text">
+                                            <button>Tags</button>
+                                            <h3>@Model.ReadList[x].Title</h3>
+                                            <p>@Model.ReadList[x].Story</p>
+                                            <a href="#">Find Out More &#8594;</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            }
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+            </div>
+
+            @*Closing Our stories*@
+    </section>
+
+
+
+
+
+
+
+
+
+      @*secondary-Search-bar*@
+          <section class="secondary-menu-bar">
+
+           <div class="blue-box">
+                <h3>Find Your Next Long Drive Now!</h3>
+
+
+
+                     <form class="search secondary-search-bar" method="post">
+                    <div class="pick ">
+                        <p>Pick Up Location</p>
+                        @Html.DropDownListFor(model=>model.Location,(SelectList)ViewBag.LocationDrop,"Select Location")
+                    </div>
+                    <div class="pick pickup_date">
+                        <p>Pick Up Date</p>
+                        <input type="date" asp-for="PickUpDate" class="select-item" name="PickUpDate" />
+                    </div>
+                    <div class="pick return_date">
+                        <p>Return Date</p>
+                        <input type="date" asp-for="ReturnDate" class="select-item" name="ReturnDate" />
+                    </div>
+                    <input class="search-btn" type="submit" value="Search for Cars" />
+                </form>
+
+
+        
+
+               
+           </div>
+
+         @*Closing secondary-Search-bar*@
+        </section>
+
+
+
+
+
+
+
+
+
+
+</div>

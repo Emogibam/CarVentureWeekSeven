@@ -1,0 +1,26 @@
+﻿@model SignUpModel
+@{
+
+}
+
+<h2>Sign in/up Form</h2>
+<div class="cont">
+	<div class="form-container sign-up-container">
+		<form  method="post">
+			<h1>Create Account</h1>
+			<span>or use your email for registration</span>
+			<input class="lay" type="text" placeholder="FullName"  asp-for="FullName" name="FullName"/>
+			<input class="lay" type="text" placeholder="Age" asp-for="Age" name="Age"/>
+			<input class="lay" type="email" placeholder="Email" asp-for="Email" name="Email" />
+			<input class="lay" type="password" placeholder="Password" asp-for="Password" name="Password"/>
+			<input value="Sign Up" type="submit" class="btn"/>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay-panel overlay-left">
+			<h1>Welcome!</h1>
+			<p>To keep connected with us please login with your personal info</p>
+			<input class="ghost" id="signIn" value="Sign In" type="submit" asp-controller="User" asp-action="SignIn"/>
+		</div>
+	</div>
+</div>
